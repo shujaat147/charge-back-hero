@@ -61,7 +61,7 @@ body {
 .index .section3 .txt p,
 .index .section4 p,
 .index .section8 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #878787;
     line-height: 23px;
     font-weight: 400;
@@ -89,18 +89,21 @@ body {
     outline: 1px solid #2cc34a;
 }
 
+.index .section2 .divfloat {
+    margin-top: -180px;
+    position: relative;
+}
+
 .index .section2 .floater {
+    position: relative;
     background-color: white;
     box-shadow: 0px 0px 79px -22px rgba(204.7265625, 163.0997553286345, 163.0997553286345, 0.41);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     padding: 47px;
     border-radius: 30px;
-    width: 62%;
-    position: absolute;
-    z-index: 1;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    width: 400px;
+    height: 270px;
 }
 
 .index .section2 .floater p {
@@ -206,6 +209,11 @@ body {
     font-weight: 400;
     color: white;
     line-height: 32px;
+    margin: 0px;
+}
+
+.index .section6 .wrapper {
+    white-space: nowrap;
 }
 
 .index .section6 .box {
@@ -312,6 +320,190 @@ body {
     font-size: 1.125rem;
     padding: 8px 50px;
     border-width: 1px;
+}
+
+@media (max-width: 1199.98px) {
+    .index .spacer {
+        margin-bottom: 10%;
+    }
+
+    .index .section1 {
+        height: 30rem;
+    }
+
+    .index .section1 h2 {
+        font-size: 1.938rem;
+    }
+
+    .index .section1 p,
+    .index .section2 .txt p,
+    .index .section3 .txt p,
+    .index .section4 p,
+    .index .section8 p {
+        font-size: 1rem;
+    }
+
+    .index .section2 .divfloat {
+        margin-top: -72px;
+    }
+
+    .index .section2 .floater {
+        padding: 30px 10px;
+        flex-wrap: wrap;
+        width: 92%;
+        height: 100%;
+    }
+
+    .index .section2 .floater p {
+        font-size: 1.25rem;
+    }
+
+    .index .section2 .txt .grn,
+    .index .section3 .txt .grn,
+    .index .section6 .grn,
+    .index .section8 .grn {
+        font-size: 1.125rem;
+    }
+
+    .index .section2 .txt h2,
+    .index .section3 .txt h2 {
+        font-size: 1.875rem;
+    }
+
+    .index .section2 .tickbox p,
+    .index .section3 .tickbox p {
+        font-size: 0.813rem;
+        margin: 0px;
+        padding-left: 15px;
+    }
+
+    .index .section3 {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .index .vertical-center {
+        padding-left: 5px;
+    }
+
+    .index .section4 img,
+    .index .section6 img {
+        width: 45px;
+    }
+
+    .index .section4 .box {
+        padding: 10px;
+    }
+
+    .index .section4 h2,
+    .index .section6 h2 {
+        font-size: 2rem;
+    }
+
+    .index .section4 .box h4 {
+        font-size: 1rem;
+    }
+
+    .index .section4 .box p {
+        font-size: 0.875rem;
+    }
+
+    .index .section5 h3 {
+        font-size: 1.563rem;
+    }
+
+    .index .section5 h2 {
+        font-size: 2.125rem;
+    }
+
+    .index .section5 p {
+        font-size: 1.125rem;
+    }
+
+    .index .section5 .team-banner {
+        display: none;
+    }
+
+    .index .background-2 {
+        background-image: none;
+    }
+
+    .index .section6 .wrapper {
+        white-space: normal;
+    }
+
+    .index .section6 .box h4 {
+        font-size: 1rem;
+    }
+
+    .index .section6 .box p {
+        font-size: 1rem;
+    }
+
+    .index .section7 p {
+        font-size: 1.125rem;
+    }
+
+    .index .section8 h2 {
+        font-size: 2rem;
+    }
+
+    .index .section8 form input {
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+
+    .index .section8 .form-group {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .index .section8 .form-group label {
+        font-size: 0.75rem;
+    }
+
+    .index .section8 .btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .index .spacer {
+        margin-bottom: 20%;
+    }
+
+    .index .section1 {
+        height: 50rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .index .section3 {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+    .index .section4 .box {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        padding: 30px 20px;
+    }
+
+    .index .section4 .box {
+        padding: 50px 30px 50px 30px;
+    }
+
+    .index .section4 img,
+    .index .section6 img {
+        width: 50px;
+    }
+
+    .index .section6 .box {
+        width: 100%;
+        background: white;
+        margin: 0px;
+        padding: 0px 10px 20px 10px;
+    }
 }
 
 /* Homepage End */
