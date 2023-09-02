@@ -17,7 +17,7 @@
  <!-- Header Start-->
  <nav class="navbar navbar-expand-xl navbar-light header">
   <div class="container">
-   <a class="navbar-brand sml" href="#">
+   <a class="navbar-brand sml" href="./index.html">
     <img class="img-fluid sm-logo" src="./img/logo-sm.png" alt="logo">
    </a>
    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,13 @@
    <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
      <li class="nav-item">
-      <a class="nav-link show" onclick="closeNavbar()" href="#">Home</a>
+      <a class="nav-link show" onclick="closeNavbar()" href="./index.html">Home</a>
      </li>
      <li class="nav-item">
       <a class="nav-link" onclick="closeNavbar()" href="./html/features.html">Features</a>
      </li>
      <li class="nav-item">
-      <a class="nav-link" onclick="closeNavbar()" href="./html/faq.html">FAQs</a>
+      <a class="nav-link" onclick="closeNavbar()" href="./html/faqs.html">FAQs</a>
      </li>
      <li class="nav-item lrg">
       <a class="navbar-brand lrg-logo" href="./index.html"><img src="./img/logo.png" alt="Logo" width="253" height="69"></a>
@@ -53,14 +53,14 @@
  <!-- Header End -->
 
  <!-- Section 1 Start -->
- <div class="background-1 row justify-content-center spacer">
+ <div class="row justify-content-center spacer">
   <div class="col-xl-10 col-lg-12 col-11">
    <section class="section1 container d-md-flex align-items-center justify-content-center">
     <div class="row align-items-md-center text-center text-md-start">
      <div class="col-md-6 col-12 p-0">
       <h2 class="pb-3">You’ve Got A Hero <br><b><span>Fighting</span> For You </b></h2>
       <p class="pt-3 pb-3">Recover Lost Revenue From Dangerous Fraudulent Chargebacks.</p>
-      <a class="btn btn-primary" href="./html/contact-us.php">Request a Demo</a>
+      <a class="btn btn-primary" href="./html/contact-us.html">Request a Demo</a>
      </div>
      <div class="col-md-6 col-12 d-flex justify-content-center p-0 mt-5 mt-md-0">
       <img src="./img/banner.webp" alt="banner-img" class="img-fluid">
@@ -85,7 +85,7 @@
          <p class="col-md-10 my-0 ps-3">Disputing Chargebacks That Win Up To 90%</p>
         </div>
         <img class="img-fluid pb-4" src="./img/banner-2-sub.png" alt="lines">
-        <a class="btn btn-primary" href="./html/contact-us.php">Get Started</a>
+        <a class="btn btn-primary" href="./html/contact-us.html">Get Started</a>
        </div>
       </div>
      </div>
@@ -119,7 +119,7 @@
         </div>
        </div>
       </div>
-      <a class="btn btn-primary" href="./html/contact-us.php">Learn More</a>
+      <a class="btn btn-primary" href="./html/contact-us.html">Learn More</a>
      </div>
     </div>
    </section>
@@ -323,9 +323,9 @@
        </div>
        <div class="row">
         <div class="form-group col-12">
-        <label for="email" class="form-label">Email *</label>
-        <input type="email" class="form-control" id="email" required placeholder="Enter Email Address">
-       </div>
+         <label for="email" class="form-label">Email *</label>
+         <input type="email" class="form-control" id="email" required placeholder="Enter Email Address">
+        </div>
        </div>
        <button type="submit" class="btn btn-primary">Sign Up</button>
       </form>
@@ -344,28 +344,8 @@
 
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
- <script>
-  function closeNavbar() {
-   var navbarToggler = document.querySelector('.navbar-toggler');
-   if (navbarToggler.classList.contains('collapsed')) {
-    return; // Navbar is already collapsed, no need to close it again
-   }
-   navbarToggler.click(); // Simulate a click to close the navbar
-  }
-
-  // Initialize the carousel
-  var carousel = new bootstrap.Carousel(document.querySelector('#carouselSlider'), {
-   interval: 2000, // Set the interval time (in milliseconds)
-   wrap: true,     // Allow looping
-   keyboard: false // Disable keyboard navigation
-  });
-
-  // Auto slide to the left on each interval
-  carousel._config.keyboard = true; // Re-enable keyboard navigation
-  setInterval(function () {
-   carousel.prev();
-  }, carousel._config.interval);
- </script>
+ <script src="./js/header.js" defer></script>
+ <script src="./js/carousel.js" defer ></script>
 </body>
 
 </html>

@@ -51,6 +51,12 @@
    color: #2CC34A;
  }
 
+  footer a:hover ,
+  footer a:focus {
+   text-decoration: none;
+   color: #2CC34A;
+ }
+
  @media (max-width: 1199.98px) {
    .header .navbar-nav {
      padding-left: 0px;
