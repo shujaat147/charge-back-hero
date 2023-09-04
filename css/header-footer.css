@@ -3,7 +3,7 @@
    text-align: center;
    justify-content: center;
    align-items: center;
-   padding-left: 15px;
+   background-color: white;
  }
 
  .header .lrg-logo {
@@ -20,6 +20,7 @@
    font-weight: 600;
    margin: 0px 10px;
    white-space: nowrap;
+   font-family: "Poppins", Sans-serif;
  }
 
  .header .nav-item .nav-link:hover,
@@ -44,11 +45,13 @@
    font-weight: 500;
    color: #878787;
    padding: 10px;
+   font-family: "Poppins", Sans-serif !important;
  }
 
  footer a {
    text-decoration: none;
    color: #2CC34A;
+   font-family: "Poppins", Sans-serif !important;
  }
 
   footer a:hover ,
@@ -97,6 +100,8 @@
    }
 
    .header .navbar-nav {
+    position: absolute;
+    z-index: 999;
      width: 100%;
      text-align: left;
      align-items: self-start;
@@ -114,7 +119,9 @@
      margin: 0px;
      padding: 10px 20px;
      font-size: 0.8125rem;
-     color: black;
+     color: #33373d;
+     font-family: "Roboto", Sans-serif;
+     font-weight: 500;
    }
 
    .header .nav-item .nav-link:hover,
