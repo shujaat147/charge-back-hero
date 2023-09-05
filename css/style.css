@@ -978,7 +978,7 @@ body {
     text-shadow: none;
 }
 
-.login .inner {
+.login {
     padding: 100px 0 170px 0;
     background-image: url(../img/login.jpg);
     background-position: center;
