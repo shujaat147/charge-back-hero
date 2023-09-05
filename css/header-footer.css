@@ -54,8 +54,8 @@
    font-family: "Poppins", Sans-serif !important;
  }
 
-  footer a:hover ,
-  footer a:focus {
+ footer a:hover,
+ footer a:focus {
    text-decoration: none;
    color: #2CC34A;
  }
@@ -93,6 +93,14 @@
      background-image: url(../img/navigation-bar.svg);
    }
 
+   .header .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+     background-image: url(../img/navigation-bar-close.svg);
+   }
+
+   .header .navbar-toggler-icon {
+     background-image: url(../img/navigation-bar.svg);
+   }
+
    .header button.navbar-toggler:focus,
    .header button.navbar-toggler:active {
      box-shadow: none;
@@ -100,8 +108,8 @@
    }
 
    .header .navbar-nav {
-    position: absolute;
-    z-index: 999;
+     position: absolute;
+     z-index: 999;
      width: 100%;
      text-align: left;
      align-items: self-start;
