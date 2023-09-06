@@ -513,6 +513,10 @@ body {
     .index .section8 .col-md-7 {
         padding: 0px 1.875rem !important;
     }
+
+    .index .section8 p{
+        padding: 10px 20px;
+    }
 }
 
 /* Homepage End */
