@@ -44,6 +44,28 @@ body {
     height: 50rem;
 }
 
+.index .bounce img {
+    animation-name: bouncer;
+    display: flex;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncer {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .index .section1 h2 {
     font-size: 2.8125rem;
     font-weight: 400;
@@ -172,7 +194,6 @@ body {
     border-radius: 30px;
     background: white;
     box-shadow: 0px 0px 42px -7px rgba(174.7265625, 124.00600532863452, 124.00600532863452, 0.23);
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     margin: 0px 10px 0px 10px;
     --e-column-margin-right: 10px;
     --e-column-margin-left: 10px;
@@ -514,7 +535,7 @@ body {
         padding: 0px 1.875rem !important;
     }
 
-    .index .section8 p{
+    .index .section8 p {
         padding: 10px 20px;
     }
 }
